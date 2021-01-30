@@ -1,5 +1,7 @@
 /// Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+ const form = document.getElementById('contact');
+ 
   var firebaseConfig = {
     apiKey: "AIzaSyAiKH42G5tGLTQwVljm_WO1Nj0IdiOwVF8",
     authDomain: "contform-1e6ed.firebaseapp.com",
@@ -29,7 +31,6 @@ function submitForm(e) {
     var phone = getInputValue('phone');
     var email = getInputValue('email');
     var message = getInputValue('message');
-
     //Save Message
 saveMessage(firstname, lastname, phone, email, message);
 //Show alert 
@@ -42,10 +43,10 @@ setTimeout(function() {
 }, 3000);
 
 //Clear form
-document.getElementById('contact').reset();
+
+form.reset();
+
 }
-
-
 // Function to get form value
 function getInputValue(id){
 return document.getElementById(id).value;

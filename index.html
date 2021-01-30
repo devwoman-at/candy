@@ -128,7 +128,7 @@
         </div>
     </section>
     <!-- Contact Form  -->
-    <section id="contact" class="contact">
+    <section  class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center cont mb-3">
@@ -136,7 +136,7 @@
                     <div class="alert">Your message has been sent</div>
                 </div>
             </div>
-            <form action="#nowhere">
+            <form id="contact" action="#nowhere">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="firstName">First Name</label>
@@ -162,13 +162,14 @@
                     <textarea class="form-control" placeholder="Leave a comment here" id="message"
                         style="height: 100px"></textarea>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="tos">
                         <label class="custom-control-label" for="tos">Sign Me Up</label>
                     </div>
-                </div>
+                </div> -->
                 <button type="submit" class="btn btn-sucsess">Submit</button>
+                <!-- <input type="button" value = "Clear Form" id = "formReset" />  -->
             </form>
         </div>
     </section>
@@ -176,10 +177,11 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
     <!-- <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script> -->
-<script src="./index.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
+    <script src="./index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
     </script>
