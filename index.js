@@ -43,9 +43,7 @@ setTimeout(function() {
 }, 3000);
 
 //Clear form
-
 form.reset();
-
 }
 // Function to get form value
 function getInputValue(id){
